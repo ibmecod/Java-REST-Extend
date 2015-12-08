@@ -26,6 +26,7 @@
 		<pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar"/>
 		<pathelement location="WebContent/WEB-INF/lib/mysqlservice.jar"/>
 		<pathelement location="WebContent/WEB-INF/lib/watsonservice.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/cf-java-app-tracker-client-0.1.0.jar"/>
 	</path>
 	<target name="init">
 		<mkdir dir="bin"/>
