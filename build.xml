@@ -6,7 +6,7 @@
 	<property name="debuglevel" value="source,lines,vars"/>
 	<property name="target" value="1.7"/>
 	<property name="source" value="1.7"/>
-	<condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else=".">
+	<condition property="ARCHIVE_DIR" value="${env.ARCHIVE_DIR}" else="./output/">
 		<isset property="env.ARCHIVE_DIR" />
 	</condition>
 	<property name="warname" value= "jprestjavafullmsk.war"/>
@@ -34,6 +34,7 @@
 	<target name="clean">
 		<delete dir="bin"/>
 		<delete file="${ARCHIVE_DIR}/${warname}" />
+		<delete dir="${ARCHIVE_DIR}" />
 	</target>
 	<target name="build" depends="build-project,build-war"/>
 	<target name="cleanall" depends="clean"/>
